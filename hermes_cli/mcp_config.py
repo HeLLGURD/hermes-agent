@@ -830,7 +830,7 @@ def mcp_command(args):
     action = getattr(args, "mcp_action", None)
 
     if action == "serve":
-        from mcp_serve import run_mcp_server
+        from hermes_cli.mcp_serve import run_mcp_server
         run_mcp_server(verbose=getattr(args, "verbose", False))
         return
 
